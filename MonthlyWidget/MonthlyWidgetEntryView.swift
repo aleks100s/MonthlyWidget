@@ -11,6 +11,8 @@ struct MonthlyWidgetEntryView: View {
 	let entry: DayEntry
 	let config: MonthConfig
 	
+	private let funFontName = "Chalkduster"
+	
 	init(entry: DayEntry) {
 		self.entry = entry
 		self.config = MonthConfig.determineConfig(from: entry.date)
@@ -26,7 +28,7 @@ struct MonthlyWidgetEntryView: View {
 					Text(config.emojiText)
 						.font(.title)
 					Text(entry.date.weekdayDisplayFormat)
-						.font(.title3)
+						.font(entry.showFuntFont ? .custom(funFontName, size: 24) : .title3)
 						.fontWeight(.bold)
 						.minimumScaleFactor(0.6)
 						.foregroundStyle(config.weekdayTextColor)
@@ -34,7 +36,7 @@ struct MonthlyWidgetEntryView: View {
 				}
 				
 				Text(entry.date.dayDisplayFormat)
-					.font(.system(size: 80, weight: .heavy))
+					.font(entry.showFuntFont ? .custom(funFontName, size: 80) : .system(size: 80, weight: .heavy))
 					.foregroundStyle(config.dayTextColor)
 			}
 			.padding()
