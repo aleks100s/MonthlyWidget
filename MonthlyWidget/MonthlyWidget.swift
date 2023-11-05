@@ -12,7 +12,7 @@ struct MonthlyWidget: Widget {
     let kind: String = "MontghlyWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+		IntentConfiguration(kind: kind, intent: ChangeFontIntent.self, provider: Provider()) { entry in
 			MonthlyWidgetEntryView(entry: entry)
 				.containerBackgroundForWidget {
 					Color.clear
@@ -28,7 +28,7 @@ struct MonthlyWidget: Widget {
 #Preview(as: .systemSmall) {
 	MonthlyWidget()
 } timeline: {
-	DayEntry(date: Date(month: .january))
+	DayEntry(date: Date(month: .january), showFuntFont: true)
 	DayEntry(date: Date(month: .february))
 	DayEntry(date: Date(month: .march))
 	DayEntry(date: Date(month: .april))

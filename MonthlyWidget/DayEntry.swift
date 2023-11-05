@@ -9,4 +9,5 @@ import WidgetKit
 
 struct DayEntry: TimelineEntry {
 	let date: Date
+	var showFuntFont: Bool = false
 }
