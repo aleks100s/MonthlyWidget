@@ -14,14 +14,11 @@ struct MonthlyWidget: Widget {
     var body: some WidgetConfiguration {
 		IntentConfiguration(kind: kind, intent: ChangeFontIntent.self, provider: Provider()) { entry in
 			MonthlyWidgetEntryView(entry: entry)
-				.containerBackgroundForWidget {
-					Color.clear
-				}
         }
         .configurationDisplayName("Monthly style widget")
         .description("The theme of the widget changes based on month.")
 		.supportedFamilies([.systemSmall])
-		.contentMarginsDisabled()
+		// .disfavoredLocations([.standBy], for: [.systemSmall])
     }
 }
 

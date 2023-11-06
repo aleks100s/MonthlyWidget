@@ -11,7 +11,14 @@ struct MonthlyWidgetEntryView: View {
 	let entry: DayEntry
 	let config: MonthConfig
 	
+	@Environment(\.showsWidgetContainerBackground) var showsWidgetBackground
+	@Environment(\.widgetRenderingMode) var renderingMode
+	
 	private let funFontName = "Chalkduster"
+	
+	private var isVibrant: Bool {
+		renderingMode == .vibrant
+	}
 	
 	init(entry: DayEntry) {
 		self.entry = entry
@@ -19,27 +26,29 @@ struct MonthlyWidgetEntryView: View {
 	}
 
 	var body: some View {
-		ZStack {
+		VStack {
+			HStack(spacing: 4) {
+				Text(config.emojiText)
+					.font(.title)
+				Text(entry.date.weekdayDisplayFormat)
+					.font(entry.showFuntFont ? .custom(funFontName, size: 24) : .title3)
+					.fontWeight(.bold)
+					.minimumScaleFactor(0.6)
+					.foregroundStyle(showsWidgetBackground ? config.weekdayTextColor : .white)
+				Spacer()
+			}
+			.id(entry.date)
+			.transition(.push(from: .trailing))
+			.animation(.bouncy, value: entry.date)
+			
+			Text(entry.date.dayDisplayFormat)
+				.font(entry.showFuntFont ? .custom(funFontName, size: 80) : .system(size: 80, weight: .heavy))
+				.foregroundStyle(showsWidgetBackground ? config.dayTextColor : .white)
+				.contentTransition(.numericText())
+		}
+		.containerBackgroundForWidget {
 			ContainerRelativeShape()
 				.fill(config.backgroundColor.gradient)
-			
-			VStack {
-				HStack(spacing: 4) {
-					Text(config.emojiText)
-						.font(.title)
-					Text(entry.date.weekdayDisplayFormat)
-						.font(entry.showFuntFont ? .custom(funFontName, size: 24) : .title3)
-						.fontWeight(.bold)
-						.minimumScaleFactor(0.6)
-						.foregroundStyle(config.weekdayTextColor)
-					Spacer()
-				}
-				
-				Text(entry.date.dayDisplayFormat)
-					.font(entry.showFuntFont ? .custom(funFontName, size: 80) : .system(size: 80, weight: .heavy))
-					.foregroundStyle(config.dayTextColor)
-			}
-			.padding()
 		}
 	}
 }
