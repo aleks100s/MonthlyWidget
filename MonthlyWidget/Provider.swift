@@ -7,20 +7,19 @@
 
 import WidgetKit
 
-struct Provider: IntentTimelineProvider {
+struct Provider: AppIntentTimelineProvider {
 	func placeholder(in context: Context) -> DayEntry {
 		DayEntry(date: Date())
 	}
-
-	func getSnapshot(for configuration: ChangeFontIntent, in context: Context, completion: @escaping (DayEntry) -> ()) {
-		let entry = DayEntry(date: Date())
-		completion(entry)
+	
+	func snapshot(for configuration: ChangeFontIntent, in context: Context) async -> DayEntry {
+		DayEntry(date: Date())
 	}
-
-	func getTimeline(for configuration: ChangeFontIntent, in context: Context, completion: @escaping (Timeline<DayEntry>) -> ()) {
+	
+	func timeline(for configuration: ChangeFontIntent, in context: Context) async -> Timeline<DayEntry> {
 		var entries: [DayEntry] = []
 		
-		let showFuntFont = configuration.funFont == 1
+		let showFuntFont = configuration.funFont
 		
 		let currentDate = Date()
 		for dayOffset in 0 ..< 7 {
@@ -31,6 +30,6 @@ struct Provider: IntentTimelineProvider {
 		}
 
 		let timeline = Timeline(entries: entries, policy: .atEnd)
-		completion(timeline)
+		return timeline
 	}
 }

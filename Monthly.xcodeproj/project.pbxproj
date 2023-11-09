@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276E89B72AFD12FD00932811 /* ChangeFontIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276E89B62AFD12FD00932811 /* ChangeFontIntent.swift */; };
 		27BCA62F2AEE4B6500462E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA62E2AEE4B6500462E71 /* AppDelegate.swift */; };
 		27BCA6312AEE4B6500462E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA6302AEE4B6500462E71 /* SceneDelegate.swift */; };
 		27BCA6332AEE4B6500462E71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA6322AEE4B6500462E71 /* ViewController.swift */; };
@@ -26,8 +27,6 @@
 		27BCA6662AEE58A000462E71 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA6652AEE58A000462E71 /* Provider.swift */; };
 		27BCA6682AEE58BE00462E71 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA6672AEE58BE00462E71 /* Color+.swift */; };
 		27BCA66B2AEE5BB500462E71 /* ContainerBackgroundForWidgetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BCA66A2AEE5BB500462E71 /* ContainerBackgroundForWidgetModifier.swift */; };
-		27E2CC622AF81119003712DC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 27E2CC612AF81119003712DC /* Intents.intentdefinition */; };
-		27E2CC632AF81119003712DC /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 27E2CC612AF81119003712DC /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		276E89B62AFD12FD00932811 /* ChangeFontIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFontIntent.swift; sourceTree = "<group>"; };
 		27BCA62B2AEE4B6500462E71 /* Monthly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BCA62E2AEE4B6500462E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27BCA6302AEE4B6500462E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 		27BCA6652AEE58A000462E71 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		27BCA6672AEE58BE00462E71 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		27BCA66A2AEE5BB500462E71 /* ContainerBackgroundForWidgetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBackgroundForWidgetModifier.swift; sourceTree = "<group>"; };
-		27E2CC612AF81119003712DC /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +153,7 @@
 				27BCA6632AEE588300462E71 /* DayEntry.swift */,
 				27BCA6512AEE4BC600462E71 /* Assets.xcassets */,
 				27BCA6532AEE4BC600462E71 /* Info.plist */,
-				27E2CC612AF81119003712DC /* Intents.intentdefinition */,
+				276E89B62AFD12FD00932811 /* ChangeFontIntent.swift */,
 			);
 			path = MonthlyWidget;
 			sourceTree = "<group>";
@@ -273,7 +272,6 @@
 			files = (
 				27BCA6332AEE4B6500462E71 /* ViewController.swift in Sources */,
 				27BCA62F2AEE4B6500462E71 /* AppDelegate.swift in Sources */,
-				27E2CC622AF81119003712DC /* Intents.intentdefinition in Sources */,
 				27BCA6312AEE4B6500462E71 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,8 +287,8 @@
 				27BCA6662AEE58A000462E71 /* Provider.swift in Sources */,
 				27BCA65C2AEE4F0600462E71 /* Date+.swift in Sources */,
 				27BCA6642AEE588300462E71 /* DayEntry.swift in Sources */,
+				276E89B72AFD12FD00932811 /* ChangeFontIntent.swift in Sources */,
 				27BCA64E2AEE4BC500462E71 /* MonthlyWidgetBundle.swift in Sources */,
-				27E2CC632AF81119003712DC /* Intents.intentdefinition in Sources */,
 				27BCA6502AEE4BC500462E71 /* MonthlyWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@ struct MonthlyWidget: Widget {
     let kind: String = "MontghlyWidget"
 
     var body: some WidgetConfiguration {
-		IntentConfiguration(kind: kind, intent: ChangeFontIntent.self, provider: Provider()) { entry in
+		AppIntentConfiguration(kind: kind, intent: ChangeFontIntent.self, provider: Provider()) { entry in
 			MonthlyWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Monthly style widget")
