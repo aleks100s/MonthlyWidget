@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		276E89B62AFD12FD00932811 /* ChangeFontIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFontIntent.swift; sourceTree = "<group>"; };
-		27BCA62B2AEE4B6500462E71 /* Monthly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BCA62B2AEE4B6500462E71 /* Monthlyy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthlyy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BCA62E2AEE4B6500462E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27BCA6302AEE4B6500462E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27BCA6322AEE4B6500462E71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		27BCA62C2AEE4B6500462E71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27BCA62B2AEE4B6500462E71 /* Monthly.app */,
+				27BCA62B2AEE4B6500462E71 /* Monthlyy.app */,
 				27BCA6462AEE4BC500462E71 /* MonthlyWidgetExtension.appex */,
 			);
 			name = Products;
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27BCA62A2AEE4B6500462E71 /* Monthly */ = {
+		27BCA62A2AEE4B6500462E71 /* Monthlyy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27BCA63F2AEE4B6600462E71 /* Build configuration list for PBXNativeTarget "Monthly" */;
+			buildConfigurationList = 27BCA63F2AEE4B6600462E71 /* Build configuration list for PBXNativeTarget "Monthlyy" */;
 			buildPhases = (
 				27BCA6272AEE4B6500462E71 /* Sources */,
 				27BCA6282AEE4B6500462E71 /* Frameworks */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				27BCA6552AEE4BC600462E71 /* PBXTargetDependency */,
 			);
-			name = Monthly;
+			name = Monthlyy;
 			productName = Monthly;
-			productReference = 27BCA62B2AEE4B6500462E71 /* Monthly.app */;
+			productReference = 27BCA62B2AEE4B6500462E71 /* Monthlyy.app */;
 			productType = "com.apple.product-type.application";
 		};
 		27BCA6452AEE4BC500462E71 /* MonthlyWidgetExtension */ = {
@@ -238,7 +238,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27BCA62A2AEE4B6500462E71 /* Monthly */,
+				27BCA62A2AEE4B6500462E71 /* Monthlyy */,
 				27BCA6452AEE4BC500462E71 /* MonthlyWidgetExtension */,
 			);
 		};
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27BCA63F2AEE4B6600462E71 /* Build configuration list for PBXNativeTarget "Monthly" */ = {
+		27BCA63F2AEE4B6600462E71 /* Build configuration list for PBXNativeTarget "Monthlyy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27BCA6402AEE4B6600462E71 /* Debug */,
